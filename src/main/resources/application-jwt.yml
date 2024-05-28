@@ -1,0 +1,12 @@
+jwt:
+  secret: 691641f2b278c0280c4da8dde6bd84b65dbc97135c6dc9bf9de479c562a659cbf3405d55d55a76ec9543181e2809fb45f9ad725e70c3f6ccad77d2ddf0798f41
+
+  access:
+    expiration: 900
+    header: Authorization
+
+  refresh:
+    expiration: 1800
+    header: Authorization-refresh
+
+# Git Bash → openssl rand -hex (HS512 암호키는 512비트(64바이트) 64, HS256 암호키는 256비트(32비트) 32
