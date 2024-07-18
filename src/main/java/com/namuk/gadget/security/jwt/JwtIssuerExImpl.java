@@ -32,7 +32,7 @@
 //@Transactional
 //@RequiredArgsConstructor
 //@PropertySource("classpath:application-jwt.yml")
-//public class JwtIssuerImpl implements JwtIssuer{
+//public class JwtIssuerExImpl implements JwtIssuerEx{
 //
 //    @Value("${jwt.secret}")
 //    private String secretKey;

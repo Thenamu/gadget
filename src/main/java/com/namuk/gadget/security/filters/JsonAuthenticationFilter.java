@@ -1,4 +1,4 @@
-package com.namuk.gadget.controller.security.filters;
+package com.namuk.gadget.security.filters;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.ServletException;

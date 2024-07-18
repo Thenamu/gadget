@@ -1,6 +1,5 @@
 package com.namuk.gadget.service.user;
 
-import com.namuk.gadget.controller.security.config.SecurityConfig;
 import com.namuk.gadget.domain.User;
 import com.namuk.gadget.dto.member.ChangePasswordRequestDTO;
 import com.namuk.gadget.repository.member.UserRepository;

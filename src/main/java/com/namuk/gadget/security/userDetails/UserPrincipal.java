@@ -1,4 +1,4 @@
-package com.namuk.gadget.controller.security.userDetails;
+package com.namuk.gadget.security.userDetails;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

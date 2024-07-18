@@ -1,7 +1,6 @@
 package com.namuk.gadget.controller;
 
-import com.namuk.gadget.controller.security.filters.JsonAuthenticationFilter;
-import com.namuk.gadget.controller.security.userDetails.UserPrincipal;
+import com.namuk.gadget.security.filters.JsonAuthenticationFilter;
 import com.namuk.gadget.domain.Native;
 import com.namuk.gadget.domain.User;
 import com.namuk.gadget.dto.login.LoginRequestDTO;
@@ -15,10 +14,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.validation.ObjectError;
@@ -27,7 +23,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.*;
 
 @RestController
-@RequestMapping(value = "/login")
+@RequestMapping(value = "/user")
 @RequiredArgsConstructor
 public class LoginController {
 

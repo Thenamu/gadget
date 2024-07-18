@@ -3,6 +3,7 @@ package com.namuk.gadget.service.user;
 import com.namuk.gadget.domain.User;
 import com.namuk.gadget.dto.login.LoginRequestDTO;
 import com.namuk.gadget.dto.member.MemberJoinRequestDTO;
+import com.namuk.gadget.dto.member.UserProfileResponseDTO;
 
 public interface UserService {
 
@@ -20,4 +21,6 @@ public interface UserService {
     // Optional<User> memberLogin2(MemberLoginDto memberLoginDto);
 
     String memberJoin(MemberJoinRequestDTO memberJoinRequestDto);
+
+    UserProfileResponseDTO getUserProfile(String id);
 }

@@ -32,6 +32,9 @@ public class MemberJoinRequestDTO {
 
     private String userSns;
 
+    @NotBlank(message = "역할이 비어 있습니다.")
+    private String userRole;
+
     BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
 
     public User toUserEntity() {
@@ -44,6 +47,7 @@ public class MemberJoinRequestDTO {
                 .userName(this.userName)
                 .userEmail(this.userEmail)
                 .userSns(this.userSns)
+                .userRole(this.userRole)
                 .build();
     }
 }

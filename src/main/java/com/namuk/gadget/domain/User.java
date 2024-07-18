@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.DynamicUpdate;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -14,10 +15,11 @@ import java.util.List;
  * user 엔티티 클래스
  */
 @Getter
+@Setter
 @Entity
 @Builder
 @DynamicUpdate
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@NoArgsConstructor // (access = AccessLevel.PROTECTED)
 @AllArgsConstructor
 @Table(name = "user")
 public class User {
@@ -55,9 +57,11 @@ public class User {
     @Column(name = "user_sns")
     private String userSns;
 
+    @Column(name = "user_role")
+    private String userRole;
 
-    // @Column(name = "refresh_token", length = 1000, nullable = false)
-    // private String refreshToken;
+//    @Column(name = "refresh_token", length = 1000, nullable = false)
+//    private String refreshToken;
 
 //    public void updateRefreshToken(String refreshToken) {
 //        this.refreshToken = refreshToken;

@@ -3,6 +3,7 @@ package com.namuk.gadget.service.user;
 import com.namuk.gadget.domain.User;
 import com.namuk.gadget.dto.login.LoginRequestDTO;
 import com.namuk.gadget.dto.member.MemberJoinRequestDTO;
+import com.namuk.gadget.dto.member.UserProfileResponseDTO;
 import com.namuk.gadget.repository.member.MemberRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -92,5 +93,10 @@ public class UserServiceImpl implements UserService {
     public String memberJoin(MemberJoinRequestDTO memberJoinRequestDto) {
         memberRepository.save(memberJoinRequestDto.toUserEntity());
         return memberJoinRequestDto.getUserName();
+    }
+
+    @Override
+    public UserProfileResponseDTO getUserProfile(String id) {
+        return memberRepository.findUserById(id);
     }
 }

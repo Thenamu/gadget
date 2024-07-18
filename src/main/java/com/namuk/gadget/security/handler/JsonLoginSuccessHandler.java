@@ -1,7 +1,7 @@
-package com.namuk.gadget.controller.security.handler;
+package com.namuk.gadget.security.handler;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.namuk.gadget.controller.security.userDetails.UserPrincipal;
+import com.namuk.gadget.security.userDetails.UserPrincipal;
 import com.namuk.gadget.dto.login.LoginResponseDTO;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

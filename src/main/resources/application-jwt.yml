@@ -6,7 +6,7 @@ jwt:
     header: Authorization
 
   refresh:
-    expiration: 1800
+    expiration: 86400
     header: Authorization-refresh
 
 # Git Bash → openssl rand -hex (HS512 암호키는 512비트(64바이트) 64, HS256 암호키는 256비트(32비트) 32

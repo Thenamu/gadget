@@ -6,7 +6,7 @@
 //import javax.crypto.SecretKey;
 //import java.util.Optional;
 //
-//public interface JwtIssuer {
+//public interface JwtIssuerEx {
 //
 //    String createAccessToken(String id);
 //

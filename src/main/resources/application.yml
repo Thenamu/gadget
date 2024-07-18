@@ -32,13 +32,16 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: none #create, update, validate, none
+      # naming:
+        # physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     properties:
       hibernate.format_sql: true
 
 # Logging configuration
 logging:
   level:
-    org.springframework.security: debug # trace
+    org.springframework.security: DEBUG # trace
+
 
 
 

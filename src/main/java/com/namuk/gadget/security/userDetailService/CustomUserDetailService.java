@@ -1,11 +1,9 @@
-package com.namuk.gadget.controller.security.userDetailService;
+package com.namuk.gadget.security.userDetailService;
 
-import com.namuk.gadget.controller.security.userDetails.UserPrincipal;
+import com.namuk.gadget.security.userDetails.UserPrincipal;
 import com.namuk.gadget.domain.Native;
-import com.namuk.gadget.domain.NativePage;
 import com.namuk.gadget.domain.User;
 import com.namuk.gadget.repository.Native.LocalRepository;
-import com.namuk.gadget.repository.Native.NativeRepository;
 import com.namuk.gadget.repository.member.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -15,7 +13,6 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 /**
  * UserDetailService 구현

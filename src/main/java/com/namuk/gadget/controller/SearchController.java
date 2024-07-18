@@ -55,7 +55,7 @@ public class SearchController {
 
 
     /**
-     * 나라 이름에 따라 호텔 정보를 가져오는 엔드포인트ASDFGH
+     * 나라 이름에 따라 호텔 정보를 가져오는 엔드포인트
      * 
      * @param name 요청한 나라 이름
      * @return 요청된 나라에 맞는 호텔 정보 리스트

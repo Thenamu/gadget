@@ -1,4 +1,4 @@
-package com.namuk.gadget.controller.security.handler;
+package com.namuk.gadget.security.handler;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
